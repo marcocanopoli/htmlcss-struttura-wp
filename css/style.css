@@ -1,6 +1,6 @@
 /* debug */
 /* #body {
-    background-color: #ffd3e1;
+    background-color: #f8749e;
 } */
 
 #body-header {
@@ -9,18 +9,19 @@
 
 #top-section {
     background-color: #e1d67a;
-
 }
 
 main {
     background-color: #0387f4;
 }
 
+main > * {
+    background-color: #abcfe7;
+}
+
 footer {
     background-color: #8801fe;
-
 }
-/* /debug */
 
 /* common */
 * {
@@ -36,29 +37,56 @@ footer {
 }
 
 /* body */
-#body {
-    height: 1000px;
-    width: 50%;
+#body-container {
+    height: 2000px;
+    width: 80%;
     margin: auto;
+    padding: 1% 0;
 }
 
 #body-header {
     height: 10%;
     width: 100%;
-    margin-top: 1%;
 }
 
 #top-section {
     height: 35%;
     width: 100%;
-    margin-top: 2%;
-    margin-bottom: 2%;   
+    margin: 2% 0;  
 }
 
 /* main */
 main {
-    height: 50%;
+    height: 46%;
     width: 100%;
+    padding-bottom: 2%;
+}
+
+/* main header */
+#main-header {
+    clear: both;
+    height: 15%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#left-column {
+    float: left;
+    height: 81%;
+    width: 23%;
+}
+
+#middle-column {
+    float: left;
+    height: 81%;
+    width: 50%;
+    margin: 0 2%;
+}
+
+#right-column {
+    float: left;
+    height: 81%;
+    width: 23%;
 }
 
 /* footer */
@@ -66,5 +94,4 @@ footer {
     height: 5%;
     width: 100%;
     margin-top: 1%;
-    margin-bottom: 1%;
 }
