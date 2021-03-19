@@ -1,13 +1,13 @@
 /* debug */
-/* #body {
+/* .container {
     background-color: #f8749e;
 } */
 
-#body-header {
+nav {
     background-color: #e579e6;
 }
 
-#top-section {
+.banner {
     background-color: #e1d67a;
 }
 
@@ -15,7 +15,8 @@ main {
     background-color: #0387f4;
 }
 
-main > * {
+.title,
+.float-container > * {
     background-color: #abcfe7;
 }
 
@@ -30,6 +31,10 @@ footer {
     padding: 0;
 }
 
+.float-left {
+    float: left;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -37,60 +42,48 @@ footer {
 }
 
 /* body */
-#body-container {
-    width: 1600px;
-    margin: auto;
-    padding: 25px 0;
+.container {
+    width: 80%;
+    margin: 25px auto;
 }
 
-#body-header {
+/*header*/
+nav {
     height: 200px;
-    width: 100%;
 }
 
-#top-section {
+.banner {
     height: 650px;
-    width: 100%;
     margin: 35px 0;  
 }
 
 /* main */
-main {
-    height: 900px;
-    width: 100%;
-    padding-bottom:30px;
+
+.title {
+    height: 125px;
 }
 
-/* main header */
-#main-header {
-    clear: both;
-    height: 130px;
-    width: 100%;
-    margin-bottom:35px;
+.float-container {
+    padding: 35px 0;
 }
 
-#left-column {
+.col {
     float: left;
     height: 700px;
-    width: 350px;
 }
 
-#middle-column {
-    float: left;
-    height: 700px;
-    width: 830px;
+.col-left,
+.col-right {
+    width: 20%;
+}
+
+.col-center {
+    width: calc(60% - 70px);
     margin: 0 35px;
-}
-
-#right-column {
-    float: left;
-    height: 700px;
-    width: 350px;
 }
 
 /* footer */
 footer {
     height: 100px;
-    width: 100%;
     margin-top: 15px;
 }
